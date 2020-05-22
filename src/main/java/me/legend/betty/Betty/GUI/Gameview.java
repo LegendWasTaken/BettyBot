@@ -14,7 +14,7 @@ public class Gameview extends JFrame {
         setSize(SIZE_X, SIZE_Y);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-        this.capture = new GameCapture(SIZE_X, SIZE_Y);
+        this.capture = new GameCapture(SIZE_X, SIZE_Y, this);
         add(this.capture);
         setVisible(true);
     }

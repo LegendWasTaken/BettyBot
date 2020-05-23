@@ -1,5 +1,7 @@
 package me.legend.betty.Betty.GUI;
 
+import me.legend.betty.Betty.Enums.Gamestate;
+
 import javax.swing.*;
 
 public class Gameview extends JFrame {
@@ -17,6 +19,10 @@ public class Gameview extends JFrame {
         this.capture = new GameCapture(SIZE_X, SIZE_Y, this);
         add(this.capture);
         setVisible(true);
+    }
+
+    public void setCurrentGamestate(Gamestate state){
+        setTitle("Betty Jstris Bot | Current State: " + state.toString().toLowerCase());
     }
 
 }
